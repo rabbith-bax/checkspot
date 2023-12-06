@@ -21,8 +21,6 @@ public class Spot implements Serializable {
     private long id;
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
-    @OneToOne(cascade = CascadeType.ALL)
-    private User issuedBy;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Opinion> opinions;
     @OneToOne(cascade = CascadeType.ALL)

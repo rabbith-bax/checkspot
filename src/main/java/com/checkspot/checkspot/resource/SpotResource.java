@@ -16,7 +16,7 @@ import java.util.Optional;
 public class SpotResource {
     private final SpotService spotService;
 
-    @GetMapping("all")
+    @GetMapping("/all")
     public ResponseEntity<List<Spot>> getAllSpots() {
         return new ResponseEntity<>(spotService.findAllSpots(), HttpStatus.OK);
     }
