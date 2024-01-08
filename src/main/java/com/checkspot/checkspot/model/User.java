@@ -14,6 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "Accounts")
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
